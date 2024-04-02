@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "ts-node src/server.ts",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
     "build": "tsc -p .",
     "postinstall": "link-module-alias"
@@ -27,7 +27,8 @@
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.5",
     "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.6"
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mime": "^4.0.0"
   },
   "_moduleAliases": {
     "src": "./src",
